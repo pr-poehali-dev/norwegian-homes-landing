@@ -42,7 +42,7 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container flex items-center justify-between h-16">
-          <span className="text-lg font-extrabold tracking-[0.3em]">NORDHUS</span>
+          <span className="text-lg font-extrabold tracking-[0.3em]">FjordFrame</span>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
             <a href="#advantages" className="hover:text-foreground transition-colors">Преимущества</a>
             <a href="#projects" className="hover:text-foreground transition-colors">Проекты</a>
@@ -63,7 +63,7 @@ const Index = () => {
         <div className="container relative pb-24 animate-fade-in">
           <p className="text-background/80 tracking-[0.3em] text-xs uppercase mb-5">Строительство норвежских домов</p>
           <h1 className="text-background text-4xl md:text-6xl lg:text-7xl font-extrabold max-w-4xl leading-[1.05]">
-            Загородный дом под ключ — на 80 лет вперёд
+            Дом, который служит — где бы вы ни выбрали жить
           </h1>
           <p className="text-background/85 text-lg md:text-xl max-w-2xl mt-6 font-light">
             Энергоэффективные дома по норвежским стандартам. Фиксированная смета и гарантия на конструкцию 25 лет.
@@ -249,7 +249,7 @@ const Index = () => {
               </a>
               <div className="flex items-center gap-4">
                 <Icon name="MapPin" size={20} className="text-accent" />
-                <span className="text-lg">Москва, Ленинградское шоссе, 39с5</span>
+                <span className="text-lg">Московская обл., г. Коломна, ул. Митяево, 156</span>
               </div>
             </div>
           </div>
@@ -267,8 +267,8 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground py-10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="text-lg font-extrabold tracking-[0.3em]">NORDHUS</span>
-          <p className="text-primary-foreground/60 text-sm">© 2026 NORDHUS — норвежские дома под ключ</p>
+          <span className="text-lg font-extrabold tracking-[0.3em]">FjordFrame</span>
+          <p className="text-primary-foreground/60 text-sm">© 2026 FjordFrame — норвежские дома под ключ</p>
         </div>
       </footer>
     </div>

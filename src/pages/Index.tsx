@@ -63,7 +63,7 @@ const Index = () => {
         <div className="container relative pb-24 animate-fade-in">
           <p className="text-background/80 tracking-[0.3em] text-xs uppercase mb-5">Строительство норвежских домов</p>
           <h1 className="text-background text-4xl md:text-6xl lg:text-7xl font-extrabold max-w-4xl leading-[1.05]">
-            Дом, где царит спокойствие
+            Дом, где царит тепло
           </h1>
           <p className="text-background/85 text-lg md:text-xl max-w-2xl mt-6 font-light">
             Энергоэффективные дома по норвежским стандартам. Фиксированная смета и гарантия на конструкцию 25 лет.

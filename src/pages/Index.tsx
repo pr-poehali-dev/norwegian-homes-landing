@@ -67,7 +67,7 @@ const Index = () => {
             Дом, где царит тепло
           </h1>
           <p className="inline-block bg-background/20 backdrop-blur-sm text-background text-lg md:text-xl max-w-2xl mt-6 font-light px-6 py-4 rounded-3xl">
-            Хотите забыть о счетах за отопление? Норвежский дом держит тепло в 4 раза лучше, чем дом из бруса, и в 12 раз больше — чем кирпичный. Комфорт без переплат круглый год!
+            Хотите забыть о счетах за отопление? Норвежский дом держит тепло в 4 раза лучше — чем дом из бруса, и в 12 раз больше — чем кирпичный. Комфорт без переплат круглый год!
           </p>
           <div className="flex flex-wrap gap-4 mt-10">
             <Button asChild size="lg" className="rounded-none text-base px-8 h-14">

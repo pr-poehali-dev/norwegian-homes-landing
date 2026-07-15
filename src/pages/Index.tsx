@@ -62,11 +62,11 @@ const Index = () => {
         <img src={HERO_IMG} alt="Норвежский дом" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-foreground/10" />
         <div className="container relative pb-24 animate-fade-in">
-          <p className="text-background/80 tracking-[0.3em] text-xs uppercase mb-5">Строительство норвежских домов</p>
+          <span className="inline-block bg-background/25 backdrop-blur-sm text-background tracking-[0.3em] text-xs uppercase mb-5 px-5 py-2 rounded-full">Строительство норвежских домов</span>
           <h1 className="text-background text-4xl md:text-6xl lg:text-7xl font-extrabold max-w-4xl leading-[1.05]">
             Дом, где царит тепло
           </h1>
-          <p className="text-background/85 text-lg md:text-xl max-w-2xl mt-6 font-light">
+          <p className="inline-block bg-background/20 backdrop-blur-sm text-background text-lg md:text-xl max-w-2xl mt-6 font-light px-6 py-4 rounded-3xl">
             Энергоэффективные дома по норвежским стандартам. Фиксированная смета и гарантия на конструкцию 25 лет.
           </p>
           <div className="flex flex-wrap gap-4 mt-10">

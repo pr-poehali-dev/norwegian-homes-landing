@@ -1,8 +1,9 @@
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import heroHouse from '@/assets/hero-house.jpg';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/2483af7b-5941-4eb5-b993-802611dd1636/files/1ac64813-0085-499b-a26d-71a6c2776238.jpg';
+const HERO_IMG = heroHouse;
 const INTERIOR_IMG = 'https://cdn.poehali.dev/projects/2483af7b-5941-4eb5-b993-802611dd1636/files/c0380f4b-a03f-43e9-af60-3543be184f3c.jpg';
 
 const advantages = [

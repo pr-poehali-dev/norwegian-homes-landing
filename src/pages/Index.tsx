@@ -43,7 +43,7 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container flex items-center justify-between h-16">
-          <span className="text-lg font-extrabold tracking-[0.3em]">FjordFrame</span>
+          <span className="font-logo text-lg font-extrabold tracking-wide">ЗащитинСтрой</span>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
             <a href="#advantages" className="hover:text-foreground transition-colors">Преимущества</a>
             <a href="#projects" className="hover:text-foreground transition-colors">Проекты</a>
@@ -267,8 +267,8 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground py-10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="text-lg font-extrabold tracking-[0.3em]">FjordFrame</span>
-          <p className="text-primary-foreground/60 text-sm">© 2026 FjordFrame — норвежские дома под ключ</p>
+          <span className="font-logo text-lg font-extrabold tracking-wide">ЗащитинСтрой</span>
+          <p className="text-primary-foreground/60 text-sm">© 2026 ЗащитинСтрой — норвежские дома под ключ</p>
         </div>
       </footer>
     </div>

@@ -7,10 +7,10 @@ const HERO_IMG = heroHouse;
 const INTERIOR_IMG = 'https://cdn.poehali.dev/projects/2483af7b-5941-4eb5-b993-802611dd1636/files/c0380f4b-a03f-43e9-af60-3543be184f3c.jpg';
 
 const advantages = [
-  { icon: 'ShieldCheck', title: 'Долговечность', text: 'Клеёный брус и каркас служат 80+ лет без потери геометрии. Гарантия на конструкцию — 25 лет.' },
-  { icon: 'Thermometer', title: 'Теплоизоляция', text: 'Утепление 250 мм по норвежскому стандарту. Расходы на отопление ниже типового дома в 2–3 раза.' },
-  { icon: 'Leaf', title: 'Экологичность', text: 'Северная сосна и ель, натуральные пропитки. Без формальдегидных смол и токсичных клеёв.' },
-  { icon: 'Timer', title: 'Скорость', text: 'Дом «под ключ» за 4–6 месяцев. Заводская готовность деталей сокращает срок стройки на 40%.' },
+  { icon: 'ShieldCheck', title: 'Долговечность', text: 'Клеёный брус и каркас служат более 100 лет без потери геометрии. Гарантия на конструкцию — 25 лет.' },
+  { icon: 'Thermometer', title: 'Теплозащита', text: 'Переживаете из‑за роста тарифов? В норвежском доме затраты на отопление в 9 раза ниже — вы спокойно переходите на электричество: перерасхода электроэнергии не будет!' },
+  { icon: 'Leaf', title: 'Экологичность', text: 'Строим из северной сосны и ели, применяем натуральные пропитки. Исключили формальдегид и токсичные клеи — контролируем каждый этап на своём производстве.' },
+  { icon: 'Timer', title: 'Скорость', text: 'Мы соберём дом за 3 дня, а за месяц пройдём весь путь — от фундамента до готового жилья: просто заезжайте и живите.' },
 ];
 
 const projects = [
@@ -23,12 +23,12 @@ const projects = [
 ];
 
 const steps = [
-  { n: '01', title: 'Заявка и расчёт', text: 'Обсуждаем участок, бюджет и пожелания. Готовим смету за 2 дня.' },
-  { n: '02', title: 'Проект', text: 'Архитектурное решение и 3D-визуализация будущего дома.' },
-  { n: '03', title: 'Фундамент', text: 'Свайно-винтовой или плита — подбираем под ваш грунт.' },
-  { n: '04', title: 'Сборка', text: 'Монтаж домокомплекта и кровли под закрытый контур.' },
-  { n: '05', title: 'Отделка', text: 'Инженерные системы, утепление, внутренняя и фасадная отделка.' },
-  { n: '06', title: 'Сдача', text: 'Приёмка по чек-листу из 120 пунктов и передача ключей.' },
+  { n: '01', title: 'Заявка и расчёт', text: 'Высылаем готовые дома и цены, или рассчитаем индивидуальный проект.' },
+  { n: '02', title: 'Договор', text: 'Подписание договора за несколько минут через ГосУслуги.' },
+  { n: '03', title: 'Фундамент', text: 'План и схема свайно-винтового фундамента с обвязкой под ваш участок.' },
+  { n: '04', title: 'Сборка', text: 'Доставляем и возводим ваш дом в кратчайшие сроки.' },
+  { n: '05', title: 'Отделка', text: 'Делаем инженерные системы, утепление, черновую отделку, окна и двери.' },
+  { n: '06', title: 'Дом готов', text: 'Подписание акта приема-передачи и вручение ключей.' },
 ];
 
 const reviews = [
@@ -43,7 +43,7 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container flex items-center justify-between h-16">
-          <span className="font-logo text-lg font-black tracking-wide">ЗащитинСТРОЙ</span>
+          <span className="font-logo text-2xl font-black tracking-wide text-primary">ЗащитинСТРОЙ</span>
           <nav className="hidden md:flex gap-8 text-sm text-muted-foreground">
             <a href="#advantages" className="hover:text-foreground transition-colors">Преимущества</a>
             <a href="#projects" className="hover:text-foreground transition-colors">Проекты</a>
@@ -94,6 +94,7 @@ const Index = () => {
             </div>
           ))}
         </div>
+        <p className="font-semibold text-lg text-center mt-12">Мы аккредитованная компания во всех банках и наши дома подходят под Материнский Капитал, Военную Ипотеку, Семейную Ипотеку, рассрочку.</p>
       </section>
 
       {/* PROJECTS */}
@@ -135,7 +136,7 @@ const Index = () => {
       <section id="steps" className="container py-24 md:py-32">
         <div className="max-w-2xl mb-16">
           <p className="text-accent tracking-[0.25em] text-xs uppercase mb-4">Этапы строительства</p>
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">От заявки до ключей — прозрачно на каждом шаге</h2>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">От идеи до ключей в руках - прозрачно и честно на каждом шаге</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {steps.map((s) => (
@@ -152,13 +153,17 @@ const Index = () => {
       <section className="bg-primary text-primary-foreground py-24 md:py-32">
         <div className="container grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-primary-foreground/60 tracking-[0.25em] text-xs uppercase mb-4">Технологии и материалы</p>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">Норвежские стандарты в каждом узле</h2>
+            <p className="text-primary-foreground/60 tracking-[0.25em] text-xs uppercase mb-4">Надежное сопровождение</p>
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">Дом «под ключ» без хлопот</h2>
+            <p className="text-primary-foreground/70 leading-relaxed mb-8">Хотите дом, который идеально впишется в вашу жизнь? Мы создадим для вас уникальный проект — без типовых шаблонов.</p>
             <ul className="space-y-6">
               {[
-                ['Layers', 'Утеплитель 250 мм', 'Базальтовая вата ROCKWOOL по схеме перекрёстного утепления — без мостиков холода.'],
-                ['Frame', 'Профиль клеёного бруса', 'Сухой брус камерной сушки 8–14% влажности. Стабильная геометрия без усадки.'],
-                ['PanelTop', 'Энергосберегающие окна', 'Двухкамерные стеклопакеты с инертным газом и тёплой дистанционной рамкой.'],
+                ['Home', 'Индивидуальный проект дома', 'Без типовых шаблонов, под ваш образ жизни.'],
+                ['Plug', 'Все коммуникации', 'Электричество, водоснабжение, канализация, отопление: проложим и подключим, оформим лицевые счета.'],
+                ['Paintbrush', 'Внутренняя и внешняя отделка', 'Качественные материалы, единый стиль, долговечные решения.'],
+                ['Palette', 'Дизайн-проект', 'Планировка, цветовые решения, расстановка мебели.'],
+                ['Trees', 'Ландшафт и благоустройство территории', 'Планировка участка, дорожки, зоны отдыха, озеленение.'],
+                ['Scale', 'Юридическое сопровождение и постановка на учёт', 'Оформление документов, регистрация дома, минимизация рисков. С вашими документами работает отдельный юрист.'],
               ].map(([icon, title, text]) => (
                 <li key={title} className="flex gap-4">
                   <Icon name={icon} size={24} className="text-accent shrink-0 mt-1" />
@@ -174,6 +179,7 @@ const Index = () => {
             <img src={INTERIOR_IMG} alt="Интерьер" className="w-full h-full object-cover" />
           </div>
         </div>
+        <p className="font-semibold text-lg text-center container mt-16">Это выгодно, так как у нас собственное производство домов и мы напрямую сотрудничаем с заводами-изготовителями. Сравните цены на рынке и убедитесь.</p>
       </section>
 
       {/* ABOUT */}
@@ -183,18 +189,16 @@ const Index = () => {
             <p className="text-accent tracking-[0.25em] text-xs uppercase mb-4">О компании</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">Строим скандинавские дома с 2015 года</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Команда из 28 инженеров, архитекторов и монтажников. Собственное производство домокомплектов и контроль качества на каждом этапе.
+              Технология наших домов пришла напрямую из Норвегии: в 90‑х отец строил дома в Тромсё и перенял подход, где тепло и комфорт закладываются не отделкой, а самой конструкцией. В 1998 году он создал одно из первых производств в России, чтобы адаптировать эти принципы к нашим зимам.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Работаем по сертификатам ISO 9001 и используем материалы с европейскими экологическими допусками.
+              Сейчас я развиваю это направление, сохраняя ключевые инженерные решения и строго контролируя каждый этап вместе с отцом. Это не просто «скандинавский стиль» — это проверенная система, которая реально экономит на отоплении и служит десятилетиями. Для нас качество — не рекламный ход, а личная ответственность перед клиентами и перед именем семьи.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-px bg-border border border-border self-start">
             {[
-              ['120+', 'домов сдано'],
-              ['2015', 'год основания'],
-              ['25 лет', 'гарантия на конструкцию'],
-              ['98%', 'сдач точно в срок'],
+              ['1000+', 'домов сдано'],
+              ['1998', 'год основания'],
             ].map(([num, label]) => (
               <div key={label} className="bg-card p-8">
                 <div className="text-3xl md:text-4xl font-extrabold text-accent mb-2">{num}</div>
@@ -237,7 +241,7 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <p className="text-accent tracking-[0.25em] text-xs uppercase mb-4">Контакты</p>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-10">Рассчитаем стоимость вашего дома</h2>
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-10">Нажмите "Рассчитать", чтобы начать новую жизнь</h2>
             <div className="space-y-6">
               <a href="tel:+78001234567" className="flex items-center gap-4 group">
                 <Icon name="Phone" size={20} className="text-accent" />
@@ -266,9 +270,15 @@ const Index = () => {
 
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground py-10">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-logo text-lg font-black tracking-wide">ЗащитинСТРОЙ</span>
-          <p className="text-primary-foreground/60 text-sm">© 2026 ЗащитинСТРОЙ — норвежские дома под ключ</p>
+        <div className="container flex flex-col md:flex-row items-center md:items-start justify-between gap-6 text-center md:text-left">
+          <div>
+            <p className="text-primary-foreground/60 text-sm">© 2026 ЗащитинСТРОЙ — норвежские дома под ключ</p>
+            <p className="text-primary-foreground/40 text-xs mt-1">Все права защищены. Информация, представленная на сайте не является публичной офертой</p>
+          </div>
+          <div>
+            <span className="font-logo text-lg font-black tracking-wide">ЗащитинСТРОЙ</span>
+            <p className="text-primary-foreground/40 text-xs mt-1">Индивидуальный Предприниматель Защитин Дмитрий Андреевич,<br />ИНН 502213600994, ОГРНИП 326508100252686</p>
+          </div>
         </div>
       </footer>
     </div>

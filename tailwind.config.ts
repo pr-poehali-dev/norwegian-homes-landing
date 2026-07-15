@@ -21,7 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Manrope', 'sans-serif'],
-				logo: ['Unbounded', 'sans-serif'],
+				logo: ['Raleway', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
